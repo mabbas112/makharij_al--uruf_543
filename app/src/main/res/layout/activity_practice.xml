@@ -33,7 +33,8 @@
             android:id="@+id/op1ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="RadioButton 1"
+            android:onClick="btn1Click"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -41,7 +42,8 @@
             android:id="@+id/op2ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="RadioButton 2"
+            android:onClick="btn2Click"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -49,7 +51,8 @@
             android:id="@+id/op3ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="RadioButton 3"
+            android:onClick="btn3Click"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -57,7 +60,8 @@
             android:id="@+id/op4ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="RadioButton 4"
+            android:onClick="btn4Click"
             android:textAlignment="center"
             android:textSize="17sp" />
     </RadioGroup>

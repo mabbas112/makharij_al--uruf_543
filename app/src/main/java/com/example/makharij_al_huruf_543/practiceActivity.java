@@ -3,6 +3,7 @@ package com.example.makharij_al_huruf_543;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
@@ -15,6 +16,7 @@ public class practiceActivity extends AppCompatActivity {
 
 
     String question,answer;
+    int rand_num=0;
     String[][] QnA_Array={
             {"Halqiyah Sound Produced from End of Throat",       "أ ہ","غ خ","ق","ک"},
             {"Halqiyah Sound Produced from Middle of Throat",    "أ ہ" ,"غ خ","ق","ع ح"},
@@ -35,7 +37,7 @@ public class practiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice);
         Random rand=new Random();
-        int rand_num= rand.nextInt(5);
+        rand_num= rand.nextInt(5);
         TextView textView= findViewById(R.id.questionID);
         textView.setText(QnA_Array[rand_num][0]);
 
@@ -53,6 +55,38 @@ public class practiceActivity extends AppCompatActivity {
     public void nextQuestion(View view){
         Intent intent = new Intent(this, practiceActivity.class);
         startActivity(intent);
+    }
+    public void btn1Click(View view){
+        RadioButton op1btn= findViewById(R.id.op1ID);
+        String choice = op1btn.getText().toString();
+        if(choice.equals(A[rand_num]))
+            op1btn.setTextColor(Color.parseColor("#00FF00"));
+        else
+            op1btn.setTextColor(Color.parseColor("#FF0000"));
+    }
+    public void btn2Click(View view){
+        RadioButton op2btn= findViewById(R.id.op2ID);
+        String choice = op2btn.getText().toString();
+        if(choice.equals(A[rand_num]))
+            op2btn.setTextColor(Color.parseColor("#00FF00"));
+        else
+            op2btn.setTextColor(Color.parseColor("#FF0000"));
+    }
+    public void btn3Click(View view){
+        RadioButton op3btn= findViewById(R.id.op3ID);
+        String choice = op3btn.getText().toString();
+        if(choice.equals(A[rand_num]))
+            op3btn.setTextColor(Color.parseColor("#00FF00"));
+        else
+            op3btn.setTextColor(Color.parseColor("#FF0000"));
+    }
+    public void btn4Click(View view){
+        RadioButton op4btn= findViewById(R.id.op4ID);
+        String choice = op4btn.getText().toString();
+        if(choice.equals(A[rand_num]))
+            op4btn.setTextColor(Color.parseColor("#00FF00"));
+        else
+            op4btn.setTextColor(Color.parseColor("#FF0000"));
     }
 
 
