@@ -16,6 +16,7 @@
         android:textStyle="bold"
         app:backgroundTint="#00FF00"
         app:cornerRadius="10dp"
+        android:onClick="practice_activity_open"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/examBtn"
         app:layout_constraintHorizontal_bias="0.477"

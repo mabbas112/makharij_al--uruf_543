@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
         // Repository link
         Intent repoLink = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/mabbas112/makharij_al--uruf_543"));
         startActivity(repoLink);
+    }
+    public void practice_activity_open(View view) {
+        Intent intent = new Intent(MainActivity.this, practiceActivity.class);
+        startActivity(intent);
     }
 
 }
