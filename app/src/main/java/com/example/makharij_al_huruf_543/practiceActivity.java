@@ -18,12 +18,17 @@ public class practiceActivity extends AppCompatActivity {
     String[][] QnA_Array={
             {"Halqiyah Sound Produced from End of Throat",       "أ ہ","غ خ","ق","ک"},
             {"Halqiyah Sound Produced from Middle of Throat",    "أ ہ" ,"غ خ","ق","ع ح"},
+            {"Tarfiyah Sound Produced from Rounded tip of the tongue touching the base of the frontal 6 teeth",    "أ ہ" ,"غ خع ح","None" ,"ن"},
             {"Halqiyah Sound Produced from Start of Throat",     "ق","ع ح","أ ہ","غ خ"},
             {"Lahatiyah Sound Produced from Base of Tongue which is near Uvula touching the mouth roof",       "أ ہ","غ خ","ق","ک"},
             {"Lahatiyah Sound Produced from Portion of Tongue near its base touching the roof of mouth",       "غ خ","ق","ع ح","ک"},
+            {"Shajariyah-Haafiyah Sound Produced from Tongue touching the center of the mouth roof",       " خ","ج ش ی","عح","ک"},
+            {"Shajariyah-Haafiyah Sound Produced from One side of the tongue touching the molar teeth",       " خ","ج ی","ض","ک"},
+            {"Tarfiyah Sound Produced from Rounded tip of the tongue touching the base of the frontal 8 teeth",  "ل","ج ی","ض","ک"},
+            {"Tarfiyah Sound Produced from Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth", "ر","ج ی","ض","ک"},
     };
     String[] A={
-            "أ ہ","ع ح","غ خ","ق","ک"
+            "أ ہ","ع ح","ن","غ خ","ق","ک","ج ش ی","ض","ل","ر"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
