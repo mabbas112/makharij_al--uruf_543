@@ -24,5 +24,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, practiceActivity.class);
         startActivity(intent);
     }
+    public void exam_activity_open(View view) {
+        Intent intent = new Intent(MainActivity.this, examActivity.class);
+        startActivity(intent);
+    }
 
 }

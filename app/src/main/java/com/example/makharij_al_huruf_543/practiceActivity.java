@@ -67,7 +67,7 @@ public class practiceActivity extends AppCompatActivity {
         choiceColorChange(choice);
     }
     public void btn2Click(View view){
-        opbtn= findViewById(R.id.op3ID);
+        opbtn= findViewById(R.id.op2ID);
         choice = opbtn.getText().toString();
         choiceColorChange(choice);
     }

@@ -6,4 +6,96 @@
     android:layout_height="match_parent"
     tools:context=".examActivity">
 
+
+    <TextView
+        android:id="@+id/questionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayExamID" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="259dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionID">
+
+        <RadioButton
+            android:id="@+id/op1ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btn1Click"
+            android:text="RadioButton 1"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/op2ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btn2Click"
+            android:text="RadioButton 2"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/op3ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btn3Click"
+            android:text="RadioButton 3"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/op4ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btn4Click"
+            android:text="RadioButton 4"
+            android:textAlignment="center"
+            android:textSize="17sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="nextQuestion"
+        android:text="Next"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/displayExamID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Bravo, you have been prepared for exam. Good Luck"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#2196F3"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharijalhuruf543">
         <activity
+            android:name=".finalScore"
+            android:exported="true" />
+        <activity
             android:name=".examActivity"
             android:exported="true" />
         <activity
