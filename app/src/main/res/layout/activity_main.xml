@@ -79,14 +79,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_width="370dp"
+        android:layout_height="216dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/commits"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintHorizontal_bias="0.392"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/repoBtn"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/repoBtn" />
 
     <Button
         android:id="@+id/repoBtn"
@@ -98,6 +98,7 @@
         android:textAlignment="center"
         android:textColor="#F5F7F8"
         app:backgroundTint="#2196F3"
+        android:onClick="openLink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
