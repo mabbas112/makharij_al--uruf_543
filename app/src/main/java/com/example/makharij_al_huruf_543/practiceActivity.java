@@ -56,37 +56,36 @@ public class practiceActivity extends AppCompatActivity {
         Intent intent = new Intent(this, practiceActivity.class);
         startActivity(intent);
     }
+
+
+
+    RadioButton opbtn;
+    String choice;
     public void btn1Click(View view){
-        RadioButton op1btn= findViewById(R.id.op1ID);
-        String choice = op1btn.getText().toString();
-        if(choice.equals(A[rand_num]))
-            op1btn.setTextColor(Color.parseColor("#00FF00"));
-        else
-            op1btn.setTextColor(Color.parseColor("#FF0000"));
+        opbtn= findViewById(R.id.op1ID);
+        choice = opbtn.getText().toString();
+        choiceColorChange(choice);
     }
     public void btn2Click(View view){
-        RadioButton op2btn= findViewById(R.id.op2ID);
-        String choice = op2btn.getText().toString();
-        if(choice.equals(A[rand_num]))
-            op2btn.setTextColor(Color.parseColor("#00FF00"));
-        else
-            op2btn.setTextColor(Color.parseColor("#FF0000"));
+        opbtn= findViewById(R.id.op3ID);
+        choice = opbtn.getText().toString();
+        choiceColorChange(choice);
     }
     public void btn3Click(View view){
-        RadioButton op3btn= findViewById(R.id.op3ID);
-        String choice = op3btn.getText().toString();
-        if(choice.equals(A[rand_num]))
-            op3btn.setTextColor(Color.parseColor("#00FF00"));
-        else
-            op3btn.setTextColor(Color.parseColor("#FF0000"));
+        opbtn= findViewById(R.id.op3ID);
+        choice = opbtn.getText().toString();
+        choiceColorChange(choice);
     }
     public void btn4Click(View view){
-        RadioButton op4btn= findViewById(R.id.op4ID);
-        String choice = op4btn.getText().toString();
+        opbtn= findViewById(R.id.op4ID);
+        choice = opbtn.getText().toString();
+        choiceColorChange(choice);
+    }
+    void choiceColorChange(String choice){
         if(choice.equals(A[rand_num]))
-            op4btn.setTextColor(Color.parseColor("#00FF00"));
+            opbtn.setTextColor(Color.parseColor("#00FF00"));
         else
-            op4btn.setTextColor(Color.parseColor("#FF0000"));
+            opbtn.setTextColor(Color.parseColor("#FF0000"));
     }
 
 
