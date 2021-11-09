@@ -33,7 +33,11 @@ public class examActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exam_activity);
-        if(count<=5) {
+        randomQuestions();
+        count++;
+    }
+    public void randomQuestions(){
+        if(count<=2) {
             Random rand = new Random();
             rand_num = rand.nextInt(5);
             TextView textView = findViewById(R.id.questionID);
@@ -50,13 +54,11 @@ public class examActivity extends AppCompatActivity {
         }else{
             finalScoreActivity();
         }
-        count++;
     }
     public void nextQuestion(View view){
-        Intent intent = new Intent(this, examActivity.class);
-        intent.putExtra("count", count);
-        intent.putExtra("right", right);
-        startActivity(intent);
+        btn1Click(); btn2Click(); btn3Click(); btn4Click();
+        randomQuestions();
+        count++;
     }
     public void quitButton(View view){
         Intent intent = new Intent(examActivity.this, MainActivity.class);
@@ -64,41 +66,88 @@ public class examActivity extends AppCompatActivity {
         finish();
     }
     public void finalScoreActivity(){
-        Intent intent = new Intent(this, finalScore.class);
+        Intent intent = new Intent(examActivity.this, finalScore.class);
         intent.putExtra("count", count);
         intent.putExtra("right", right);
         startActivity(intent);
+        finish();
     }
 
     RadioButton opbtn;
     String choice;
-    public void btn1Click(View view){
+    public void btn1Click(){
         opbtn= findViewById(R.id.op1ID);
-        choice = opbtn.getText().toString();
-        choiceColorChange(choice);
+        opbtn.setTextColor(Color.parseColor("#000000"));
+        //choice = opbtn.getText().toString();
+        //choiceColorChange(choice);
     }
-    public void btn2Click(View view){
+    public void btn2Click(){
         opbtn= findViewById(R.id.op2ID);
-        choice = opbtn.getText().toString();
-        choiceColorChange(choice);
+        opbtn.setTextColor(Color.parseColor("#000000"));
+        //choice = opbtn.getText().toString();
+        //choiceColorChange(choice);
     }
-    public void btn3Click(View view){
+    public void btn3Click(){
         opbtn= findViewById(R.id.op3ID);
-        choice = opbtn.getText().toString();
-        choiceColorChange(choice);
+        opbtn.setTextColor(Color.parseColor("#000000"));
+        //choice = opbtn.getText().toString();
+        //choiceColorChange(choice);
     }
-    public void btn4Click(View view){
+    public void btn4Click(){
         opbtn= findViewById(R.id.op4ID);
-        choice = opbtn.getText().toString();
-        choiceColorChange(choice);
+        opbtn.setTextColor(Color.parseColor("#000000"));
+       // choice = opbtn.getText().toString();
+       // choiceColorChange(choice);
     }
     void choiceColorChange(String choice){
         if(choice.equals(A[rand_num])) {
             opbtn.setTextColor(Color.parseColor("#00FF00"));
             right++;
         }
-        else
+        else{
             opbtn.setTextColor(Color.parseColor("#FF0000"));
+            }
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.op1ID:
+                if (checked){
+                    opbtn= findViewById(R.id.op1ID);
+                    choice = opbtn.getText().toString();
+                    choiceColorChange(choice);
+                    btn2Click(); btn3Click(); btn4Click();
+                }
+                    break;
+            case R.id.op2ID:
+                if (checked){
+                    opbtn= findViewById(R.id.op2ID);
+                    choice = opbtn.getText().toString();
+                    choiceColorChange(choice);
+                    btn1Click(); btn3Click(); btn4Click();
+                }
+                break;
+            case R.id.op3ID:
+                if (checked){
+                    opbtn= findViewById(R.id.op3ID);
+                    choice = opbtn.getText().toString();
+                    choiceColorChange(choice);
+                    btn2Click(); btn1Click(); btn4Click();
+                }
+                break;
+            case R.id.op4ID:
+                if (checked){
+                    opbtn= findViewById(R.id.op4ID);
+                    choice = opbtn.getText().toString();
+                    choiceColorChange(choice);
+                    btn2Click(); btn1Click(); btn3Click();
+                }
+                break;
+        }
     }
 
 }

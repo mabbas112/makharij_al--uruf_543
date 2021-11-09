@@ -34,7 +34,7 @@
             android:id="@+id/op1ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btn1Click"
+            android:onClick="onRadioButtonClicked"
             android:text="RadioButton 1"
             android:textAlignment="center"
             android:textSize="17sp" />
@@ -43,7 +43,7 @@
             android:id="@+id/op2ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btn2Click"
+            android:onClick="onRadioButtonClicked"
             android:text="RadioButton 2"
             android:textAlignment="center"
             android:textSize="17sp" />
@@ -52,7 +52,7 @@
             android:id="@+id/op3ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btn3Click"
+            android:onClick="onRadioButtonClicked"
             android:text="RadioButton 3"
             android:textAlignment="center"
             android:textSize="17sp" />
@@ -61,7 +61,7 @@
             android:id="@+id/op4ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="btn4Click"
+            android:onClick="onRadioButtonClicked"
             android:text="RadioButton 4"
             android:textAlignment="center"
             android:textSize="17sp" />

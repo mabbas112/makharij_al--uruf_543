@@ -20,12 +20,11 @@ public class finalScore extends AppCompatActivity {
         int right = intent.getIntExtra("right",1);
 
         TextView textView= findViewById(R.id.textViewID);
-        textView.setText(right + "/" + count);
         if(right>(count/2)){
-            textView.setText("\n Congratulations");
+            textView.setText("\n Congratulations\n "+right + "/" + count);
         }
         else{
-            textView.setText("\n Sad Try Again");
+            textView.setText("\n Sad Try Again\n "+right + "/" + count);
         }
     }
     public void shareBtnFunction(View view){
@@ -36,5 +35,10 @@ public class finalScore extends AppCompatActivity {
 
         Intent shareIntent = Intent.createChooser(sendIntent, null);
         startActivity(shareIntent);
+    }
+    public void backMainActivity(View view){
+        Intent intent = new Intent(finalScore.this, MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
