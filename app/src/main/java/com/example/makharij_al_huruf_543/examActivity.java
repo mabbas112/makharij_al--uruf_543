@@ -22,12 +22,17 @@ public class examActivity extends AppCompatActivity {
             {"Lahatiyah Sound Produced from Base of Tongue which is near Uvula touching the mouth roof",       "أ ہ","غ خ","ق","ک"},
             {"Lahatiyah Sound Produced from Portion of Tongue near its base touching the roof of mouth",       "غ خ","ق","ع ح","ک"},
             {"Shajariyah-Haafiyah Sound Produced from Tongue touching the center of the mouth roof",       " خ","ج ش ی","عح","ک"},
+            {"Halqiyah Sound Produced from Start of Throat",     "ق","ع ح","أ ہ","غ خ"},
+
             {"Shajariyah-Haafiyah Sound Produced from One side of the tongue touching the molar teeth",       " خ","ج ی","ض","ک"},
             {"Tarfiyah Sound Produced from Rounded tip of the tongue touching the base of the frontal 8 teeth",  "ل","ج ی","ض","ک"},
             {"Tarfiyah Sound Produced from Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth", "ر","ج ی","ض","ک"},
+            {"Nit-eeyah Sound Produced from Tip of the tongue touching the base of the front 2 teeth", "ر","ج ی","ت د ط","ت د "},
+            {"Lisaveyah Sound Produced from Tip of the tongue comes between the front top and bottom teeth", "ظ  ث","ج ی","ص ز س","ت ص ز س"},
+
     };
     String[] A={
-            "أ ہ","ع ح","ن","غ خ","ق","ک","ج ش ی","ض","ل","ر"
+            "أ ہ","ع ح","ن","غ خ","ق","ک","ج ش ی","غ خ","ض","ل","ر","ت د ط","ظ  ذ  ث","ص ز س"
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +42,9 @@ public class examActivity extends AppCompatActivity {
         count++;
     }
     public void randomQuestions(){
-        if(count<=2) {
+        if(count<5) {
             Random rand = new Random();
-            rand_num = rand.nextInt(5);
+            rand_num = rand.nextInt(13);
             TextView textView = findViewById(R.id.questionID);
             textView.setText(QnA_Array[rand_num][0]);
 
@@ -61,9 +66,7 @@ public class examActivity extends AppCompatActivity {
         count++;
     }
     public void quitButton(View view){
-        Intent intent = new Intent(examActivity.this, MainActivity.class);
-        startActivity(intent);
-        finish();
+        finalScoreActivity();
     }
     public void finalScoreActivity(){
         Intent intent = new Intent(examActivity.this, finalScore.class);

@@ -21,10 +21,10 @@ public class finalScore extends AppCompatActivity {
 
         TextView textView= findViewById(R.id.textViewID);
         if(right>(count/2)){
-            textView.setText("\n Congratulations\n "+right + "/" + count);
+            textView.setText("\n Congratulations\n\n Gain ("+ right + ") / Total (" + count+")");
         }
         else{
-            textView.setText("\n Sad Try Again\n "+right + "/" + count);
+            textView.setText("\n Don't give up! Try Again.\n\n Gain ("+ right + ") / Total (" + count+")");
         }
     }
     public void shareBtnFunction(View view){
