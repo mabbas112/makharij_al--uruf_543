@@ -58,6 +58,11 @@ public class examActivity extends AppCompatActivity {
         intent.putExtra("right", right);
         startActivity(intent);
     }
+    public void quitButton(View view){
+        Intent intent = new Intent(examActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
     public void finalScoreActivity(){
         Intent intent = new Intent(this, finalScore.class);
         intent.putExtra("count", count);
@@ -73,7 +78,7 @@ public class examActivity extends AppCompatActivity {
         choiceColorChange(choice);
     }
     public void btn2Click(View view){
-        opbtn= findViewById(R.id.op3ID);
+        opbtn= findViewById(R.id.op2ID);
         choice = opbtn.getText().toString();
         choiceColorChange(choice);
     }
