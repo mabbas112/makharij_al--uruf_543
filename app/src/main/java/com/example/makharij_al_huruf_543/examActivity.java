@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class examActivity extends AppCompatActivity {
     String question,answer;
-    int rand_num=0,count=0;
+    int rand_num=0,count=0,right=0;
     String[][] QnA_Array={
             {"Halqiyah Sound Produced from End of Throat",       "أ ہ","غ خ","ق","ک"},
             {"Halqiyah Sound Produced from Middle of Throat",    "أ ہ" ,"غ خ","ق","ع ح"},
@@ -50,13 +50,18 @@ public class examActivity extends AppCompatActivity {
         }else{
             finalScoreActivity();
         }
+        count++;
     }
     public void nextQuestion(View view){
         Intent intent = new Intent(this, examActivity.class);
+        intent.putExtra("count", count);
+        intent.putExtra("right", right);
         startActivity(intent);
     }
     public void finalScoreActivity(){
-        Intent intent = new Intent(this, examActivity.class);
+        Intent intent = new Intent(this, finalScore.class);
+        intent.putExtra("count", count);
+        intent.putExtra("right", right);
         startActivity(intent);
     }
 
@@ -83,8 +88,10 @@ public class examActivity extends AppCompatActivity {
         choiceColorChange(choice);
     }
     void choiceColorChange(String choice){
-        if(choice.equals(A[rand_num]))
+        if(choice.equals(A[rand_num])) {
             opbtn.setTextColor(Color.parseColor("#00FF00"));
+            right++;
+        }
         else
             opbtn.setTextColor(Color.parseColor("#FF0000"));
     }

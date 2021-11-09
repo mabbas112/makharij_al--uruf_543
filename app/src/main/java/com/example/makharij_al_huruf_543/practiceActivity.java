@@ -56,6 +56,11 @@ public class practiceActivity extends AppCompatActivity {
         Intent intent = new Intent(this, practiceActivity.class);
         startActivity(intent);
     }
+    public void quitButton(View view){
+        Intent intent = new Intent(practiceActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 
 

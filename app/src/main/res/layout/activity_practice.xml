@@ -21,8 +21,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="242dp"
-        android:layout_height="318dp"
+        android:layout_width="304dp"
+        android:layout_height="253dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.378"
@@ -33,8 +33,8 @@
             android:id="@+id/op1ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton 1"
             android:onClick="btn1Click"
+            android:text="RadioButton 1"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -42,8 +42,8 @@
             android:id="@+id/op2ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton 2"
             android:onClick="btn2Click"
+            android:text="RadioButton 2"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -51,8 +51,8 @@
             android:id="@+id/op3ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton 3"
             android:onClick="btn3Click"
+            android:text="RadioButton 3"
             android:textAlignment="center"
             android:textSize="17sp" />
 
@@ -60,8 +60,8 @@
             android:id="@+id/op4ID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton 4"
             android:onClick="btn4Click"
+            android:text="RadioButton 4"
             android:textAlignment="center"
             android:textSize="17sp" />
     </RadioGroup>
@@ -81,4 +81,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Quit"
+        android:onClick="quitButton"
+        android:textAlignment="center"
+        app:backgroundTint="#2196F3"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
