@@ -26,13 +26,14 @@
         android:id="@+id/shareBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="144dp"
+        android:onClick="shareBtnFunction"
         android:text="Share"
         android:textSize="25sp"
-        android:onClick="shareBtnFunction"
         app:backgroundTint="#2196F3"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewID" />
 
@@ -40,16 +41,16 @@
         android:id="@+id/gobackBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="144dp"
+        android:onClick="backMainActivity"
         android:text="Try Again"
         android:textAlignment="center"
-        android:onClick="backMainActivity"
         android:textSize="25sp"
         android:textStyle="bold"
         app:backgroundTint="#2196F3"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shareBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

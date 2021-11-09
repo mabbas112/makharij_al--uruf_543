@@ -13,7 +13,7 @@
         android:layout_marginTop="24dp"
         android:text="TextView"
         android:textAlignment="center"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -22,8 +22,8 @@
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="338dp"
-        android:layout_height="197dp"
+        android:layout_width="330dp"
+        android:layout_height="141dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,8 +31,8 @@
 
         <RadioButton
             android:id="@+id/op1ID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="325dp"
+            android:layout_height="38dp"
             android:onClick="btn1Click"
             android:text="RadioButton 1"
             android:textAlignment="center"
@@ -40,8 +40,8 @@
 
         <RadioButton
             android:id="@+id/op2ID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="326dp"
+            android:layout_height="34dp"
             android:onClick="btn2Click"
             android:text="RadioButton 2"
             android:textAlignment="center"
@@ -49,8 +49,8 @@
 
         <RadioButton
             android:id="@+id/op3ID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="327dp"
+            android:layout_height="35dp"
             android:onClick="btn3Click"
             android:text="RadioButton 3"
             android:textAlignment="center"
@@ -58,8 +58,8 @@
 
         <RadioButton
             android:id="@+id/op4ID"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="326dp"
+            android:layout_height="32dp"
             android:onClick="btn4Click"
             android:text="RadioButton 4"
             android:textAlignment="center"
@@ -70,7 +70,7 @@
         android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:onClick="nextQuestion"
         android:text="Next"
         android:textAlignment="center"
@@ -78,7 +78,7 @@
         app:backgroundTint="#2196F3"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/questionID" />
 
@@ -86,7 +86,7 @@
         android:id="@+id/quitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:onClick="quitButton"
         android:text="Quit"
         android:textAlignment="center"
@@ -94,7 +94,7 @@
         app:backgroundTint="#2196F3"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.383"
         app:layout_constraintStart_toEndOf="@+id/radioGroup"
         app:layout_constraintTop_toBottomOf="@+id/nextBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

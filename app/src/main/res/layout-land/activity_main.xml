@@ -10,7 +10,7 @@
         android:id="@+id/practiceBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:onClick="practice_activity_open"
         android:text="Practice"
         android:textAlignment="center"
@@ -18,14 +18,14 @@
         app:backgroundTint="#00FF00"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/repoBtn" />
 
     <Button
         android:id="@+id/examBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="108dp"
+        android:layout_height="46dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="68dp"
         android:onClick="exam_activity_open"
@@ -35,7 +35,7 @@
         app:backgroundTint="#ff0000"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintHorizontal_bias="0.353"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/practiceBtn" />
 
@@ -43,7 +43,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="makhārij al-ḥurūf"
         android:textAlignment="center"
         android:textColor="#009688"
@@ -83,8 +83,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="370dp"
-        android:layout_height="216dp"
+        android:layout_width="363dp"
+        android:layout_height="160dp"
         android:layout_marginTop="8dp"
         android:src="@drawable/commits"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,9 +94,9 @@
 
     <Button
         android:id="@+id/repoBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="524dp"
+        android:layout_width="108dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="492dp"
         android:layout_marginTop="12dp"
         android:onClick="openLink"
         android:text="Repo-Link"
